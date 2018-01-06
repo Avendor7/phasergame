@@ -1,0 +1,30 @@
+{
+  "name": "phasergame",
+  "version": "1.0.0",
+  "description": "D&amp;D meets pokemon using Phaserio",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --files '.'",
+    "start2": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/step1041/phasergame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/step1041/phasergame/issues"
+  },
+  "homepage": "https://github.com/step1041/phasergame#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.7"
+  }
+}
