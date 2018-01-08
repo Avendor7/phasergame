@@ -6,9 +6,13 @@ var menuState = {
         //game.add.plugin(Phaser.Plugin.Inspector);
         //game.add.plugin(PhaserSuperStorage.StoragePlugin);
         //game.add.plugin(PhaserInput.Plugin);
-        
-        game.add.image(95, 150, 'boiler-logo');
+        var gamewidth = 1280;
+        var gameheight = 800;
 
+        var background = game.add.image(game.world.centerX-gamewidth/2, game.world.centerY-gameheight/2, 'menu-background');
+        background.width = 1280;
+        background.height = 800;
+       
     }
 
 };
