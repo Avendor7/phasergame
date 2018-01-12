@@ -12,7 +12,8 @@ var loadState = {
 
         //Load your images, spritesheets, bitmaps...
         game.load.image('menu-background', 'assets/img/menu.png');
-
+        
+        game.load.spritesheet('button', 'assets/img/playbuttons.png', 200, 75);
 
         //Load your sounds, efx, music...
         //Example: game.load.audio('rockas', 'assets/snd/rockas.wav');
@@ -26,6 +27,10 @@ var loadState = {
 
         game.stage.setBackgroundColor('#000');
         game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+
+        
         game.state.start('menu');
     }
+
+    
 };

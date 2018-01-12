@@ -13,6 +13,27 @@ var menuState = {
         background.width = 1280;
         background.height = 800;
        
+        button = game.add.button(620, 600, 'button', actionOnClick, this, 2, 1, 0);
+
+        button.onInputOver.add(over, this);
+        button.onInputOut.add(out, this);
+        button.onInputUp.add(up, this);
+
+
     }
 
 };
+function actionOnClick(){
+    alert('button pressed');
+}
+function up(){
+    
+}
+
+function out(){
+    
+}
+
+function over(){
+    
+}
