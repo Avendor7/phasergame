@@ -29,7 +29,7 @@ var menuState = {
     }, 
 
     actionOnClick: function(){
-
+        game.state.start('dungeon');
     },
 
     up: function(){
@@ -41,7 +41,7 @@ var menuState = {
     },
 
     over: function(){
-        alert('button pressed');
+        
     }
 
 };
