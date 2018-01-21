@@ -9,31 +9,39 @@ var menuState = {
         var gamewidth = 1280;
         var gameheight = 800;
 
-        var background = game.add.image(game.world.centerX-gamewidth/2, game.world.centerY-gameheight/2, 'menu-background');
+        var backgroundx = game.world.centerX-gamewidth/2;
+        var backgroundy = game.world.centerY-gameheight/2;
+
+       
+
+        var background = game.add.image(backgroundx, backgroundy, 'menu-background');
+        
         background.width = 1280;
         background.height = 800;
        
-        button = game.add.button(620, 600, 'button', actionOnClick, this, 2, 1, 0);
+        button = game.add.button(backgroundx+580, backgroundy+520, 'button', this.actionOnClick, this, 2, 1, 0);
 
-        button.onInputOver.add(over, this);
-        button.onInputOut.add(out, this);
-        button.onInputUp.add(up, this);
+        button.onInputOver.add(this.over, this);
+        button.onInputOut.add(this.out, this);
+        button.onInputUp.add(this.up, this);
 
 
+    }, 
+
+    actionOnClick: function(){
+        game.state.start('dungeon');
+    },
+
+    up: function(){
+
+    },
+
+    out: function(){
+
+    },
+
+    over: function(){
+        
     }
 
 };
-function actionOnClick(){
-    alert('button pressed');
-}
-function up(){
-    
-}
-
-function out(){
-    
-}
-
-function over(){
-    
-}
